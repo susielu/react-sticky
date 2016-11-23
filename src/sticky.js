@@ -165,7 +165,7 @@ export default class Sticky extends React.Component {
     // of disappearing until the scroll event completes, we add `transform: translateZ(0)`
     // to 'kick' rendering of this element to the GPU
     // @see http://stackoverflow.com/questions/32875046
-    let style = Object.assign({}, { transform: 'translateZ(0)' }, this.props.style);
+    let style = this.props.style;
 
     if (this.state.isSticky) {
       const stickyStyle = {
