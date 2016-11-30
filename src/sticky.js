@@ -54,11 +54,11 @@ export default class Sticky extends React.Component {
   }
 
   getXOffset() {
-    return this.refs.placeholder.getBoundingClientRect().left;
+    return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().left;
   }
 
   getWidth() {
-    return this.refs.placeholder.getBoundingClientRect().width;
+    return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().width;
   }
 
   getHeight() {
@@ -66,7 +66,7 @@ export default class Sticky extends React.Component {
   }
 
   getDistanceFromTop() {
-    return this.refs.placeholder.getBoundingClientRect().top;
+    return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().top;
   }
 
   getDistanceFromBottom() {

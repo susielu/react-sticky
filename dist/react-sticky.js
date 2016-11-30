@@ -337,12 +337,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'getXOffset',
 	    value: function getXOffset() {
-	      return this.refs.placeholder.getBoundingClientRect().left;
+	      return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().left;
 	    }
 	  }, {
 	    key: 'getWidth',
 	    value: function getWidth() {
-	      return this.refs.placeholder.getBoundingClientRect().width;
+	      return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().width;
 	    }
 	  }, {
 	    key: 'getHeight',
@@ -352,7 +352,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'getDistanceFromTop',
 	    value: function getDistanceFromTop() {
-	      return this.refs.placeholder.getBoundingClientRect().top;
+	      return this.refs.placeholder && this.refs.placeholder.getBoundingClientRect().top;
 	    }
 	  }, {
 	    key: 'getDistanceFromBottom',
