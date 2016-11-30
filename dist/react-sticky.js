@@ -347,7 +347,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'getHeight',
 	    value: function getHeight() {
-	      return _reactDom2.default.findDOMNode(this.refs.children).getBoundingClientRect().height;
+	      return this.refs.children && _reactDom2.default.findDOMNode(this.refs.children).getBoundingClientRect().height;
 	    }
 	  }, {
 	    key: 'getDistanceFromTop',
